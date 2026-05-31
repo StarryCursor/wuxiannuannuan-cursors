@@ -6,7 +6,7 @@
 <img width="1324" height="726" alt="wuxiannuannuan-cursors" src="https://github.com/user-attachments/assets/0e37193a-5261-47b9-9457-22fe29ea85ff" />
 
 
-## 项目内容 /
+## 项目内容 / Project Overview
 以在《无限暖暖》中出场的形象为原型，由StarryCursor设计并制作
 包含10种鼠标状态，均为静态图标（Windows仅能生效9种，无closedhand"拖拽“光标）
 MAC支持 32 / 64 / 160 / 320 多分辨率

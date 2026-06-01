@@ -15,7 +15,7 @@
 ### MAC：
 1. 下载并安装 [Mousecape](https://github.com/alexzielenski/Mousecape/releases)
 2. 打开 Mousecape，菜单栏 `Mousecape` → `Install Helper Tool`
-3. 下载本仓库的 [`无限暖暖-01.cape`](无限暖暖-01.cape) 文件
+3. 下载本仓库的 无限暖暖-01-v6.cape 文件
 4. 双击 .cape 文件导入到 Mousecape
 5. 右键导入的 cape → `Apply`
    

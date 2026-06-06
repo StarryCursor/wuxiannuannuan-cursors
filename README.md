@@ -3,7 +3,7 @@
 
 
 ## 预览 / Preview
-<img width="1324" height="726" alt="wuxiannuannuan-cursors" src="https://github.com/user-attachments/assets/0e37193a-5261-47b9-9457-22fe29ea85ff" />
+<img width="1228" height="972" alt="preview-v2" src="https://github.com/user-attachments/assets/3a08d27d-0cd4-4648-81cd-5425e58d9ddf" />
 
 
 ## 项目内容 / Project Overview
@@ -15,15 +15,50 @@
 ### MAC：
 1. 下载并安装 [Mousecape](https://github.com/alexzielenski/Mousecape/releases)
 2. 打开 Mousecape，菜单栏 `Mousecape` → `Install Helper Tool`
-3. 下载本仓库的 [无限暖暖-01-v6.cape](https://github.com/StarryCursor/wuxiannuannuan-cursors/blob/main/%E6%97%A0%E9%99%90%E6%9A%96%E6%9A%96-01-v6.cape) 文件
+3. 下载本仓库的 [无限暖暖-01-v8.cape](https://github.com/StarryCursor/wuxiannuannuan-cursors/blob/main/%E6%97%A0%E9%99%90%E6%9A%96%E6%9A%96-01-v8.cape) 文件
 4. 双击 .cape 文件导入到 Mousecape
 5. 右键导入的 cape → `Apply`
    
 ### Windows:
-1. 下载 zip 解压[无限暖暖-01-Windows.zip](https://github.com/user-attachments/files/28435478/-01-Windows.zip)
-2. 右键 install.inf → 选"安装"（弹 UAC 确认）
-3. 设置 → 鼠标 → 其他鼠标选项 → 指针 → 方案下拉选 无限暖暖-01 → 确定
-4. 立刻全套生效
+1. 下载 zip 解压[无限暖暖-01-Windows.zip](https://github.com/StarryCursor/wuxiannuannuan-cursors/blob/main/%E6%97%A0%E9%99%90%E6%9A%96%E6%9A%96-01-Windows-v6.zip)
+2. 右键单击 install.inf (Windows 11 用户：先点"显示更多选项"或按 Shift+F10)
+3. 在菜单里点"安装"
+4. 弹出 UAC 权限请求时，点"是"
+5. 按 Win+R 输入 main.cpl 回车，打开"鼠标 属性"
+6. 切换到"指针"标签
+7. 在"方案"下拉框里选"无限暖暖-01"
+8. 点"确定"，所有 11 个光标立即生效
+
+【常见问题】
+- 右键菜单里找不到"安装"？
+  Windows 11 需要先点"显示更多选项"，或按 Shift+F10 调出旧版菜单。
+- UAC 弹窗一闪就消失？
+  可能是账户不是管理员，或被杀毒软件拦截。
+  切换到管理员账户重试，或临时关闭杀毒软件。
+- 下拉框里没看到"无限暖暖-01"？
+  可能是 INF 没装上。试试用管理员身份打开 cmd，
+  cd 到 INF 所在目录，运行：
+    rundll32.exe setupapi.dll,InstallHinfSection DefaultInstall 132 .\install.inf
+  
+【包含的 11 个光标】
+- arrow.cur          正常箭头
+- ibeam.cur          文本选择
+- link.cur           链接选择
+- busy.cur           忙碌 / 工作中
+- unavail.cur        不可用
+- move.cur           移动
+- size_ns.cur        垂直调整 ↕
+- size_we.cur        水平调整 ↔
+- size_nesw.cur      对角调整 2 (NE-SW) ↗↙
+- size_nwse.cur      对角调整 1 (NW-SE) ↖↘
+- closedhand.cur     拖拽（Windows 标准方案不含此槽位）
+- 每个 .cur 内嵌 5 种分辨率 (32/48/64/96/128)，自适应 100%~300% 显示缩放。
+
+【卸载】
+1. Win+R 输入 main.cpl，"方案"下拉框选"Windows 默认"
+2. 用管理员身份打开 cmd，运行:
+   rmdir /S /Q "%SystemRoot%\Cursors\NuanNuan-01"
+   reg delete "HKCU\Control Panel\Cursors\Schemes" /v "无限暖暖-01" /f
 
 
 ## 致谢 / Credits

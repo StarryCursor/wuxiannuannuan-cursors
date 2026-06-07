@@ -1,4 +1,4 @@
-# 无限暖暖 Mac 鼠标指针 / Infinity Nikki Cursor Theme
+# 无限暖暖鼠标指针皮肤 / Infinity Nikki Cursor Theme
 无限暖暖（Infinity Nikki）主题的鼠标指针包。
 
 
